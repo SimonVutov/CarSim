@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
-using XInputDotNetPure; // for controller vibration
+//using XInputDotNetPure; // for controller vibration
 
 public class Vehicle : MonoBehaviour
 {
-    PlayerIndex playerIndex; //for controller vibration
-    GamePadState state;
-    GamePadState prevState;
+    //PlayerIndex playerIndex; //for controller vibration
+    //GamePadState state;
+    //GamePadState prevState;
     float vibrationMultiplyer = 0.2f;
 
     PhotonView view;
@@ -235,12 +235,12 @@ public class Vehicle : MonoBehaviour
         } else {wheelBrake = brakeStrength; }
     }
 
-    void FixedUpdate ()
+    void FixedUpdate()
     {
         rb.AddForce(-transform.up * rb.velocity.magnitude * downforce);
-        
+
         speed = rb.velocity.magnitude;
-        
+
         RaycastHit FLhit;
         RaycastHit FRhit;
         RaycastHit BLhit;
@@ -248,7 +248,7 @@ public class Vehicle : MonoBehaviour
 
         OnGround = true;
 
-        if (Physics.Raycast((transform.TransformPoint(-xWidth, 0f, zLength)), -transform.up, out FLhit, maxSuspensionDistance) ) {
+        if (Physics.Raycast((transform.TransformPoint(-xWidth, 0f, zLength)), -transform.up, out FLhit, maxSuspensionDistance)) {
             FLVelocity = (FLhit.distance - FLPreviousPosition);
             FLPreviousPosition = FLhit.distance;
             PushFL = (Mathf.Clamp(-FLVelocity * dampAmount, 0, Mathf.Infinity) + suspensionMultiplyer) * ((maxSuspensionDistance) - FLhit.distance);
@@ -267,7 +267,7 @@ public class Vehicle : MonoBehaviour
         FLSlipDirection = Quaternion.AngleAxis(turnAngle, transform.up) * ((new Vector3(0, 0, Mathf.PI * wheelSize * wheelRPM / 60))) - new Vector3(FLSlipDirectionX, 0, FLSlipDirectionZ);
         if (FLSlipDirection.magnitude > minSlideSpeed) { FLgrip = slipGrip * PushFL / FLSlipDirection.magnitude; FLSlip = true; } else { FLgrip = stableGrip * PushFL; FLSlip = false; }
 
-        if (Physics.Raycast((transform.TransformPoint(xWidth, 0f, zLength)), -transform.up, out FRhit, maxSuspensionDistance) ) {
+        if (Physics.Raycast((transform.TransformPoint(xWidth, 0f, zLength)), -transform.up, out FRhit, maxSuspensionDistance)) {
             FRVelocity = (FRhit.distance - FRPreviousPosition);
             FRPreviousPosition = FRhit.distance;
             PushFR = (Mathf.Clamp(-FRVelocity * dampAmount, 0, Mathf.Infinity) + suspensionMultiplyer) * ((maxSuspensionDistance) - FRhit.distance);
@@ -285,8 +285,8 @@ public class Vehicle : MonoBehaviour
         FRSlipDirectionX = this.transform.InverseTransformDirection(rb.GetPointVelocity(transform.TransformPoint(xWidth, 0f, zLength))).x;
         FRSlipDirection = Quaternion.AngleAxis(turnAngle, transform.up) * ((new Vector3(0, 0, Mathf.PI * wheelSize * wheelRPM / 60))) - new Vector3(FRSlipDirectionX, 0, FRSlipDirectionZ);
         if (FRSlipDirection.magnitude > minSlideSpeed) { FRgrip = slipGrip * PushFR / FRSlipDirection.magnitude; FRSlip = true; } else { FRgrip = stableGrip * PushFR; FRSlip = false; }
-        
-        if (Physics.Raycast((transform.TransformPoint(-xWidth, 0f, -zLength)), -transform.up, out BLhit, maxSuspensionDistance) ) {
+
+        if (Physics.Raycast((transform.TransformPoint(-xWidth, 0f, -zLength)), -transform.up, out BLhit, maxSuspensionDistance)) {
             BLVelocity = (BLhit.distance - BLPreviousPosition);
             BLPreviousPosition = BLhit.distance;
             PushBL = (Mathf.Clamp(-BLVelocity * dampAmount, 0, Mathf.Infinity) + suspensionMultiplyer) * ((maxSuspensionDistance) - BLhit.distance);
@@ -304,8 +304,8 @@ public class Vehicle : MonoBehaviour
         BLSlipDirectionX = this.transform.InverseTransformDirection(rb.GetPointVelocity(transform.TransformPoint(-xWidth, 0f, -zLength))).x;
         BLSlipDirection = ((new Vector3(0, 0, Mathf.PI * wheelSize * wheelRPM / 60))) - new Vector3(BLSlipDirectionX, 0, BLSlipDirectionZ);
         if (BLSlipDirection.magnitude > minSlideSpeed) { BLgrip = slipGrip * PushBL / BLSlipDirection.magnitude; BLSlip = true; } else { BLgrip = stableGrip * PushBL; BLSlip = false; }
-        
-        if (Physics.Raycast((transform.TransformPoint(xWidth, 0f, -zLength)), -transform.up, out BRhit, maxSuspensionDistance) ) {
+
+        if (Physics.Raycast((transform.TransformPoint(xWidth, 0f, -zLength)), -transform.up, out BRhit, maxSuspensionDistance)) {
             BRVelocity = (BRhit.distance - BRPreviousPosition);
             BRPreviousPosition = BRhit.distance;
             PushBR = (Mathf.Clamp(-BRVelocity * dampAmount, 0, Mathf.Infinity) + suspensionMultiplyer) * ((maxSuspensionDistance) - BRhit.distance);
@@ -323,7 +323,7 @@ public class Vehicle : MonoBehaviour
         BRSlipDirectionX = this.transform.InverseTransformDirection(rb.GetPointVelocity(transform.TransformPoint(xWidth, 0f, -zLength))).x;
         BRSlipDirection = ((new Vector3(0, 0, Mathf.PI * wheelSize * wheelRPM / 60))) - new Vector3(BRSlipDirectionX, 0, BRSlipDirectionZ);
         if (BRSlipDirection.magnitude > minSlideSpeed) { BRgrip = slipGrip * PushBR / BRSlipDirection.magnitude; BRSlip = true; } else { BRgrip = stableGrip * PushBR; BRSlip = false; }
-        
+
         if (turnControl && ((FLSlipDirection.magnitude > (minSlideSpeed * 0.9f)) || (FRSlipDirection.magnitude > (minSlideSpeed * 0.9f))) && (Mathf.Abs(transform.InverseTransformDirection(rb.velocity).z) / 10) > Mathf.Abs(transform.InverseTransformDirection(rb.velocity).x)) {
             turnAngle = Mathf.Lerp(turnAngle, 0, 0.3f);
         } else if (turnControl) {
@@ -342,7 +342,7 @@ public class Vehicle : MonoBehaviour
                 wheelRPM = currentEngineRPM / currentGearRatio;
             } else if (reverse) {
                 currentEngineRPM = Mathf.Lerp(currentEngineRPM, Mathf.Clamp(currentEngineRPM + (wheelBrake * enginePower * currentGearRatio) - (wheelThrottle * brakePressure) + engineBraking + ((FLSlipDirection.z + FRSlipDirection.z + BLSlipDirection.z + BRSlipDirection.z) * 100), 0, maxEngineRPM), 0.1f);
-                wheelRPM = currentEngineRPM / -currentGearRatio; 
+                wheelRPM = currentEngineRPM / -currentGearRatio;
             }
         }
 
@@ -357,7 +357,7 @@ public class Vehicle : MonoBehaviour
                 wheelRPM = wheelRPM + (-(FLSlipDirection.z + FRSlipDirection.z + BLSlipDirection.z + BRSlipDirection.z) * 100f / (currentGearRatio * 10)) + ((wheelThrottle * brakePressure) / (currentGearRatio * 10));
             }
         }
-        if (mine && OnGround)
+        /*if (mine && OnGround)
         {
             //controller vibaration
             GamePad.SetVibration(playerIndex, (AverageSlipDirectionMagnitude - minSlideSpeed * 0.5f) / 8 * vibrationMultiplyer, Mathf.Clamp((throttle - wheelThrottle / 10) + (brakeStrength - wheelBrake / 10) + ((AverageSlipDirectionMagnitude - minSlideSpeed) * 100), 0, 0.4f) * vibrationMultiplyer); // (controller, left vibrator, right vibrator) ranges from 0 to 1
@@ -367,12 +367,13 @@ public class Vehicle : MonoBehaviour
             GamePad.SetVibration(playerIndex, 0.015f * vibrationMultiplyer, 0.015f * vibrationMultiplyer);
         }
         else { GamePad.SetVibration(playerIndex, 0, 0); }
+        */
     }
-
+    /*
     void OnApplicationQuit()
     {//stop vibration when quitting
         GamePad.SetVibration(playerIndex, 0, 0);
-    }
+    }*/
 
     //right now the torgue and poewr curves are stright, they dont peak at max rpm but change with gears
     //engines donw work at 0rpm, time for switching gears, automatic, add in so more rpm is mroe power

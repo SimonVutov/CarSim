@@ -1,0 +1,701 @@
+Unity Editor version:    2021.3.6f1 (7da38d85baf6)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.0.1 (Build 21A559)
+Darwin version:          21.1.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/simon/Documents/GitHub/CarSim
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49868
+Successfully changed project path to: /Users/simon/Documents/GitHub/CarSim
+/Users/simon/Documents/GitHub/CarSim
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 144.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.6f1 (7da38d85baf6)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/simon/Documents/GitHub/CarSim/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56006
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001337 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 118.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.528 seconds
+Domain Reload Profiling:
+	ReloadAssembly (528ms)
+		BeginReloadAssembly (71ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (380ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (76ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (250ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (118ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009611 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 115.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  1.382 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1383ms)
+		BeginReloadAssembly (58ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (1253ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (866ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (115ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (537ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.35 seconds
+Refreshing native plugins compatible for Editor in 4.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6713 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 219 unused Assets / (0.8 MB). Loaded Objects now: 7100.
+Memory consumption went from 458.4 MB to 457.6 MB.
+Total: 22.314500 ms (FindLiveObjects: 0.335875 ms CreateObjectMapping: 0.193125 ms MarkObjects: 19.686209 ms  DeleteObjects: 2.098250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7127.528877 seconds.
+  path: Assets/Car.wav
+  artifactKey: Guid(eb14ee8faefbc8646be73bc8b04948f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Car.wav using Guid(eb14ee8faefbc8646be73bc8b04948f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f805cdf8b7ccb3bd7b90b3d33778f1') in 0.862779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Black.mat
+  artifactKey: Guid(6ff6c9d6c02906746824475ce1faa2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Black.mat using Guid(6ff6c9d6c02906746824475ce1faa2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a428ef33fa46b8d137ed3bc28bfc46ed') in 4.078513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 178.037432 seconds.
+  path: Assets/VehicleControls.inputactions
+  artifactKey: Guid(13f625d5343fc9d46b4c4429dd2b3578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VehicleControls.inputactions using Guid(13f625d5343fc9d46b4c4429dd2b3578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22152ff9646a06b06f85d698d9585af') in 0.061685 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008412 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x17dfab000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:126)
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1173ms)
+		BeginReloadAssembly (255ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (855ms)
+			LoadAssemblies (167ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (217ms)
+			ReleaseScriptCaches (7ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (410ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (122ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6536 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 75 unused Assets / (0.8 MB). Loaded Objects now: 7190.
+Memory consumption went from 466.8 MB to 466.0 MB.
+Total: 12.662375 ms (FindLiveObjects: 0.310125 ms CreateObjectMapping: 0.141250 ms MarkObjects: 11.468875 ms  DeleteObjects: 0.740083 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002386 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16b417000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:126)
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.010 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1010ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (827ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (233ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (427ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (119ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6537 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 75 unused Assets / (0.8 MB). Loaded Objects now: 7194.
+Memory consumption went from 467.3 MB to 466.5 MB.
+Total: 10.906125 ms (FindLiveObjects: 2.105833 ms CreateObjectMapping: 0.156083 ms MarkObjects: 8.323167 ms  DeleteObjects: 0.320250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002303 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16b417000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 6.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:126)
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.115 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1116ms)
+		BeginReloadAssembly (197ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (84ms)
+		EndReloadAssembly (855ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (225ms)
+			ReleaseScriptCaches (10ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (403ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (7ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6537 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 75 unused Assets / (0.8 MB). Loaded Objects now: 7198.
+Memory consumption went from 467.5 MB to 466.7 MB.
+Total: 14.866458 ms (FindLiveObjects: 0.289041 ms CreateObjectMapping: 0.165167 ms MarkObjects: 13.979208 ms  DeleteObjects: 0.431333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002757 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16b38b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:126)
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.559 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1560ms)
+		BeginReloadAssembly (282ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (129ms)
+		EndReloadAssembly (1108ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (331ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (567ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (305ms)
+				ProcessInitializeOnLoadMethodAttributes (155ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6537 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 75 unused Assets / (0.8 MB). Loaded Objects now: 7202.
+Memory consumption went from 467.8 MB to 467.0 MB.
+Total: 27.458875 ms (FindLiveObjects: 0.485917 ms CreateObjectMapping: 0.226458 ms MarkObjects: 26.033958 ms  DeleteObjects: 0.711333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1176.524013 seconds.
+  path: Assets/XInputDotNet
+  artifactKey: Guid(2a297c7ca09cc144e83f30a5958ef7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XInputDotNet using Guid(2a297c7ca09cc144e83f30a5958ef7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1297950a02fe7ceaf60b93a5d6414b6') in 0.039682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.223998 seconds.
+  path: Assets/XInputDotNet/Plugins
+  artifactKey: Guid(e9df0c444d5578648ae91c1b43400cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XInputDotNet/Plugins using Guid(e9df0c444d5578648ae91c1b43400cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f7d1fd4a9848d8951df7f7b9b61c59a') in 0.001484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.823711 seconds.
+  path: Assets/XInputDotNet/Plugins/x86
+  artifactKey: Guid(81ee109614ee77f40aea029a397052bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XInputDotNet/Plugins/x86 using Guid(81ee109614ee77f40aea029a397052bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b687d01bc2c1c5f3d98750e74050c9') in 0.001729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.570930 seconds.
+  path: Assets/XInputDotNet/Plugins/x86/XInputInterface.dll
+  artifactKey: Guid(ea8c4f25f91eef24498783a97d350656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XInputDotNet/Plugins/x86/XInputInterface.dll using Guid(ea8c4f25f91eef24498783a97d350656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0ef9ca7dea04bba98bd9115a34ca41') in 0.629889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.221162 seconds.
+  path: Assets/XInputDotNet/Plugins/x86_64
+  artifactKey: Guid(b1a9a3e0cfd88334d8984a8fe2b3a027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XInputDotNet/Plugins/x86_64 using Guid(b1a9a3e0cfd88334d8984a8fe2b3a027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e1e36109e11dcb63eb0f0442f92312') in 0.005593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.032924 seconds.
+  path: Assets/XInputDotNet/Plugins/x86_64/XInputInterface.dll
+  artifactKey: Guid(f79ea96a8e336c9429ea63c03eda9674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XInputDotNet/Plugins/x86_64/XInputInterface.dll using Guid(f79ea96a8e336c9429ea63c03eda9674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12609b979367b3241251576be1ea073') in 0.001653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.611858 seconds.
+  path: Assets/XInputDotNet/Plugins/XInputDotNetPure.dll
+  artifactKey: Guid(b36a7f6d28503d045b758e8fb3c40d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XInputDotNet/Plugins/XInputDotNetPure.dll using Guid(b36a7f6d28503d045b758e8fb3c40d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b616f33c3e37d419f9e5b8011f277dd0') in 0.001797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.143566 seconds.
+  path: Assets/Cars
+  artifactKey: Guid(050c4f9e00f5e284ea0c8c99f2ed6f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cars using Guid(050c4f9e00f5e284ea0c8c99f2ed6f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642f72c56c20b7bb7abe34a52ec339bf') in 0.001274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.417493 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(1c87e0634dce9e84b98799a027a13564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(1c87e0634dce9e84b98799a027a13564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba47f314b4340178fcb87621830f043') in 0.000923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.924018 seconds.
+  path: Assets/Resources/Lamborghini Terzo Millennio.prefab
+  artifactKey: Guid(65b4df4259529744ea4f9e772e8452e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Lamborghini Terzo Millennio.prefab using Guid(65b4df4259529744ea4f9e772e8452e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eae3fe95e7ca57fd776bd58e4b7ea25') in 0.431734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Resources/Porsche 911 GT3.prefab
+  artifactKey: Guid(4ee47768efa4a9341937330017904137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Porsche 911 GT3.prefab using Guid(4ee47768efa4a9341937330017904137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a753967e5da10319232ddaf6811d6c') in 0.115388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Resources/Pagani Huayra BC.prefab
+  artifactKey: Guid(2d986e72c16b009498107217b3ed6ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pagani Huayra BC.prefab using Guid(2d986e72c16b009498107217b3ed6ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e7a45211a247d7cf182c391d9f0554') in 2.131710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Resources/Lamborghini Centenario.prefab
+  artifactKey: Guid(62002f59c49a2124a86e7a43b246aa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Lamborghini Centenario.prefab using Guid(62002f59c49a2124a86e7a43b246aa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49fb9f9561da1ca6f02c5a3fd969c31b') in 0.118413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Resources/Pagani Huayra BC Metallic Red.prefab
+  artifactKey: Guid(fe562fdb7e9d8b64c907eb5aa4d49ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pagani Huayra BC Metallic Red.prefab using Guid(fe562fdb7e9d8b64c907eb5aa4d49ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e830772458ccaa2814151d64b761a05') in 1.942329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Resources/Pagani Huayra BC.prefab
+  artifactKey: Guid(2d986e72c16b009498107217b3ed6ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Pagani Huayra BC.prefab using Guid(2d986e72c16b009498107217b3ed6ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4ec50b700ccb358b98b55647e709e1') in 0.046691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Resources/Mercedes Benz Amg GT3 2016.prefab
+  artifactKey: Guid(44d8770156c6c4549beef86114535620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mercedes Benz Amg GT3 2016.prefab using Guid(44d8770156c6c4549beef86114535620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8637e5ca50523595a4f2d8346484120') in 0.037236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.433480 seconds.
+  path: Assets/Resources/Lamborghini Centenario.prefab
+  artifactKey: Guid(62002f59c49a2124a86e7a43b246aa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Lamborghini Centenario.prefab using Guid(62002f59c49a2124a86e7a43b246aa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96947fb4249989c997a6915c77ae5eb5') in 0.157525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.886225 seconds.
+  path: Assets/Resources/Lamborghini Centenario.prefab
+  artifactKey: Guid(62002f59c49a2124a86e7a43b246aa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Lamborghini Centenario.prefab using Guid(62002f59c49a2124a86e7a43b246aa02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10b16acf155895b4a6e6c1352fc4fe2') in 0.188919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Resources/Porsche 911 GT3.prefab
+  artifactKey: Guid(4ee47768efa4a9341937330017904137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Porsche 911 GT3.prefab using Guid(4ee47768efa4a9341937330017904137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df715d2e61568c613d9fab99891b1e5d') in 0.103641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Resources/Mercedes Benz Amg GT3 2016.prefab
+  artifactKey: Guid(44d8770156c6c4549beef86114535620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Mercedes Benz Amg GT3 2016.prefab using Guid(44d8770156c6c4549beef86114535620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e039fcd462388c72e3d553967c56349') in 0.048496 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002736 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16b38b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:126)
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.178 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1179ms)
+		BeginReloadAssembly (271ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (99ms)
+		EndReloadAssembly (826ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (8ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (391ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (213ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6543 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (0.8 MB). Loaded Objects now: 7259.
+Memory consumption went from 478.4 MB to 477.6 MB.
+Total: 7.638292 ms (FindLiveObjects: 0.300459 ms CreateObjectMapping: 0.135750 ms MarkObjects: 6.522625 ms  DeleteObjects: 0.677333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002312 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16b38b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/simon/Documents/GitHub/CarSim/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 3.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:126)
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.038 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1038ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (825ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (229ms)
+			ReleaseScriptCaches (15ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (392ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6537 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 75 unused Assets / (0.8 MB). Loaded Objects now: 7263.
+Memory consumption went from 478.3 MB to 477.5 MB.
+Total: 6.299916 ms (FindLiveObjects: 0.240833 ms CreateObjectMapping: 0.129542 ms MarkObjects: 5.630459 ms  DeleteObjects: 0.298208 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
